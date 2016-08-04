@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">		
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script>
+		var form = $("#example-form");
+		form.validate({
+		errorPlacement: function errorPlacement(error, element) { element.before(error); },
+		rules: {
+		confirm: {
+		equalTo: "#password"
+		}
+		}
+		});
+		form.children("div").steps({
+		headerTag: "h3",
+		bodyTag: "section",
+		transitionEffect: "slideLeft",
+		onStepChanging: function (event, currentIndex, newIndex)
+		{
+		form.validate().settings.ignore = ":disabled,:hidden";
+		return form.valid();
+		},
+		onFinishing: function (event, currentIndex)
+		{
+		form.validate().settings.ignore = ":disabled";
+		return form.valid();
+		},
+		onFinished: function (event, currentIndex)
+		{
+		alert("Submitted!");
+		}
+		});
+		</script>
+	</head>
+	<body>
+		<form id="example-form" action="#">
+			<div>
+				<div class="form-section">
+				<h3>Size</h3>
+				<div class="col-md-3 col-md-offset-1">
+					<input type="radio" name="size" value="1"> 1 Item<br>
+ 					<input type="radio" name="size" value="2"> 2 Pack<br>
+ 					<input type="radio" name="size" value="36"> 36 Mini Cupcakes<br>
+ 				</div>
+ 				<div class="col-md-3 col-md-offset-1">
+  					<input type="radio" name="size" value="4"> 4 Pack<br>
+  					<input type="radio" name="size" value="6"> 6 Pack<br>
+  					<input type="radio" name="size" value="12"> 12 Mini Cupcakes<br>
+  				</div>
+  				<div class="col-md-3 col-md-offset-1">
+  					<input type="radio" name="size" value="12"> 12 Pack<br>
+  					<input type="radio" name="size" value="24"> 24 Pack<br>
+  				</div>
+  				</div>
+
+  				<div class="form-section">
+				<h3>Flavors</h3>
+				<div class="col-md-3 col-md-offset-1">
+					<input type="text" name="" maxlength="2" class="number"> Blueberry Drizzle<br>
+					<input type="text" name="" maxlength="2" class="number"> Caramel Butter Pecan<br>
+					<input type="text" name="" maxlength="2" class="number"> Chocolate Banana<br>
+					<input type="text" name="" maxlength="2" class="number"> Chocolate Caramel<br>
+					<input type="text" name="" maxlength="2" class="number"> Chocolate Chip Mint<br>
+					<input type="text" name="" maxlength="2" class="number"> Chocolate Peanut Butter<br>
+					<input type="text" name="" maxlength="2" class="number"> Chocolate Raspberry<br>
+					<input type="text" name="" maxlength="2" class="number"> Cookies & Cream<br>
+					<input type="text" name="" maxlength="2" class="number"> Double Chocolate<br>
+				</div>
+				<div class="col-md-3 col-md-offset-1">
+					<input type="text" name="" maxlength="2" class="number"> French Roast (Coffee)<br>
+					<input type="text" name="" maxlength="2" class="number"> German Chocolate<br>
+					<input type="text" name="" maxlength="2" class="number"> Green Tea<br>
+					<input type="text" name="" maxlength="2" class="number"> Kiwi Drizzle<br>
+					<input type="text" name="" maxlength="2" class="number"> Nutella (Hazelnut)<br>
+					<input type="text" name="" maxlength="2" class="number"> PB Chocolate Banana<br>
+					<input type="text" name="" maxlength="2" class="number"> Peach Drizzle<br>
+					<input type="text" name="" maxlength="2" class="number"> Peanut Butter and Jelly<br>
+					<input type="text" name="" maxlength="2" class="number"> Pina Colada<br>
+				</div>
+				<div class="col-md-3 col-md-offset-1">
+					<input type="text" name="" maxlength="2" class="number"> Pink Lemonade<br>
+					<input type="text" name="" maxlength="2" class="number"> Red Velvet<br>
+					<input type="text" name="" maxlength="2" class="number"> S'mores<br>
+					<input type="text" name="" maxlength="2" class="number"> Strawberry Drizzle<br>
+					<input type="text" name="" maxlength="2" class="number"> Strawberry Pink Lemonade<br>
+					<input type="text" name="" maxlength="2" class="number"> Taro (Ube)<br>
+					<input type="text" name="" maxlength="2" class="number"> Weekly Special<br>
+					<input type="text" name="" maxlength="2" class="number"> Yellow Cake Confetti<br>
+					<input type="text" name="" maxlength="2" class="number"> Yellow Cake Confetti<br>
+				</div>
+				</div>
+
+				<div class="form-section">
+				<h3>Hints</h3>
+					<div class="col-md-3 col-md-offset-1">
+					<input type="text" name="" maxlength="2" class="number"> Blueberry Drizzle<br>
+					<input type="text" name="" maxlength="2" class="number"> Caramel Butter Pecan<br>
+					<input type="text" name="" maxlength="2" class="number"> Chocolate Banana<br>
+					<input type="text" name="" maxlength="2" class="number"> Chocolate Caramel<br>
+					<input type="text" name="" maxlength="2" class="number"> Chocolate Chip Mint<br>
+					<input type="text" name="" maxlength="2" class="number"> Chocolate Peanut Butter<br>
+					<input type="text" name="" maxlength="2" class="number"> Chocolate Raspberry<br>
+					<input type="text" name="" maxlength="2" class="number"> Cookies & Cream<br>
+					<input type="text" name="" maxlength="2" class="number"> Double Chocolate<br>
+				</div>
+				<div class="col-md-3 col-md-offset-1">
+					<input type="text" name="" maxlength="2" class="number"> French Roast (Coffee)<br>
+					<input type="text" name="" maxlength="2" class="number"> German Chocolate<br>
+					<input type="text" name="" maxlength="2" class="number"> Green Tea<br>
+					<input type="text" name="" maxlength="2" class="number"> Kiwi Drizzle<br>
+					<input type="text" name="" maxlength="2" class="number"> Nutella (Hazelnut)<br>
+					<input type="text" name="" maxlength="2" class="number"> PB Chocolate Banana<br>
+					<input type="text" name="" maxlength="2" class="number"> Peach Drizzle<br>
+					<input type="text" name="" maxlength="2" class="number"> Peanut Butter and Jelly<br>
+					<input type="text" name="" maxlength="2" class="number"> Pina Colada<br>
+				</div>
+				<div class="col-md-3 col-md-offset-1">
+					<input type="text" name="" maxlength="2" class="number"> Pink Lemonade<br>
+					<input type="text" name="" maxlength="2" class="number"> Red Velvet<br>
+					<input type="text" name="" maxlength="2" class="number"> S'mores<br>
+					<input type="text" name="" maxlength="2" class="number"> Strawberry Drizzle<br>
+					<input type="text" name="" maxlength="2" class="number"> Strawberry Pink Lemonade<br>
+					<input type="text" name="" maxlength="2" class="number"> Taro (Ube)<br>
+					<input type="text" name="" maxlength="2" class="number"> Weekly Special<br>
+					<input type="text" name="" maxlength="2" class="number"> Yellow Cake Confetti<br>
+				</div>
+				</div>
+
+				<div class="form-section">
+					<input id="acceptTerms" name="acceptTerms" type="checkbox" class="required"> <label for="acceptTerms">I agree with the Terms and Conditions.</label>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

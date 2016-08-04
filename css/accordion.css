@@ -1,0 +1,33 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#ss_menu { 
+	width: 650px; 
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}
+
+.ss_button { 
+	background-color: none;
+	border-bottom: 1px solid rgba(97,65,58,0.25);
+	cursor: pointer;
+	padding: 10px;
+	color: rgba(97,65,58,0.95);
+	
+	}
+	
+.ss_content {
+	background-color:  none;
+	color: rgba(97,65,58,0.85);
+	display: none;
+	padding: 35px;
+	line-height: 20px; 
+	border-bottom: 1px solid rgba(97,65,58,0.25);
+	}
+
+.ss_button:hover{
+   color:rgba(219,186,129,255);
+   background-color:rgba(97,65,58,0.8);
+}
