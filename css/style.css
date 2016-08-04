@@ -640,7 +640,7 @@ a {
 /* RESPONSIVE */
 
 
-@media only screen and (max-width: 720px), only screen and (max-device-width: 720px) {
+@media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
 .topbar {
 	display: none;
 	font-size: 9px;
@@ -649,9 +649,10 @@ a {
         display: none;
 }
 header {
-	height: 100px;
+	height: 70px;
 }
 header img {
+	max-height: 50px;
 	margin: 0 auto;
 }
 .head {
@@ -660,17 +661,30 @@ header img {
 	margin-left:auto;
 	margin-right: auto;
 	z-index: 1;
+	margin-top: 2.5em;
 }
 .head a, .head h1 {
 	margin-top: -2.8em;
 	font-size: 24px;
 }
+
+.nav-icon {
+	margin-top:  0.8em;
+	margin-left:  0.3em;
+}
+
 section.portfolio{
 width: 90%;
 }
 
+section h2 {
+	padding-top:  0px;
+		padding-bottom:  10px;
+}
 h2 {
 	font-size: 14px;
+	font-weight: 300;
+	padding-bottom:  10px;
 }
 
 h4 {
@@ -689,18 +703,43 @@ section p {
 }
 
 .overlay nav {
+	padding: 10px;
 	width: 90%;
+	background-color: rgba(219,186,129,255);
 }
 
 .overlay .overlay-close{
 	top: 70px;
 }
+
+.overlay ul {
+	padding-bottom:  10px;
+}
+.overlay ul li a {
+	font-size:  10px;
+}
+
+.overlay .overlay-close {
+	top:  40px;
+}
+.overlayf {
+	font-size: 12px;
+}
 #ss_menu {
 	width: 100%;
 }
 
+.ss_button {
+	font-size:  10px;
+	letter-spacing:  1px;
+}
+
+.ss_content{
+	font-size:  10px;
+	letter-spacing:  1px;
+}
  section.portfolio {
-   padding-top: 92px;
+   padding-top: 62px;
 }
 section.portfolio ul {
    -moz-column-count: 1;
