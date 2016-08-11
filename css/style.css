@@ -96,7 +96,7 @@ body{
     bottom:0px;
     left:0px;
     right:0px;
-	background-color:rgba(219,186,129,0.7);
+	background-color:rgba(219,186,129,0.3);
 	width: 100%;
 	font-family: 'Helvetica', sans-serif;
 }
@@ -640,7 +640,7 @@ a {
 /* RESPONSIVE */
 
 
-@media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 968px), only screen and (max-device-width: 968px) {
 .topbar {
 	display: none;
 	font-size: 9px;
