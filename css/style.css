@@ -96,7 +96,7 @@ body{
     bottom:0px;
     left:0px;
     right:0px;
-	background-color:rgba(219,186,129,0.3);
+	background-color:rgba(219,186,129,0.35);
 	width: 100%;
 	font-family: 'Helvetica', sans-serif;
 }
@@ -111,7 +111,7 @@ header {
     position: fixed;
     top: -3px;
 	z-index:99;
-	background-color: rgba(97,65,58,0.95);
+	background-color: rgba(97,65,58,1);
 	border-bottom-color: rgba(219,186,129,.35);
 	border-bottom-style:solid;
 	border-bottom-width: 1px;
