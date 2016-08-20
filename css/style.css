@@ -157,7 +157,7 @@ header {
 
 .headleft a, .headright a{
 	font-family: 'Helvetica', sans serif;
-	font-size:16px;
+	font-size:15px;
 	letter-spacing: 3px;
 	color: rgba(219,186,129,0.6);
 	text-decoration: none;
@@ -175,11 +175,13 @@ header {
 	margin-top: 50px;
 	padding-left:10px;
 	text-align: right;
+	 white-space: nowrap;
 }
 .headright {
 	margin-top: 50px;
 	padding-right:10px;
 	text-align: left;
+	 white-space: nowrap;
 }
 
 iframe{
@@ -406,6 +408,11 @@ box-shadow: 6px 0 4px -4px rgba(0,0,0,0.2) , -6px 0 4px -4px rgba(0,0,0,0.2);
     column-count: 1;}
 	}
 
+	#partyText ul li:hover {
+		text-decoration: :none;
+		font-style: normal;
+	} 
+
 
 /*Remove Padding from Lists*/
 ul, ol { padding:0; padding-top: 20px;padding-bottom: 20px; margin: 0; }
@@ -602,7 +609,7 @@ a:link, a:visited, a:hover, a:active {
 	text-align: center;
 }
 .overlayf .fa-twitter, .overlayf .fa-instagram, .overlayf .fa-yelp{
-  color: white;
+  color: #725349;
   font-size: .8em;
   padding: 15px;
 }
