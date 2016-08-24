@@ -126,8 +126,8 @@ header {
 	width: 250px;
 	height: 34px;
 	font-family: 'Helvetica', sans-serif;
-	background-image: linear-gradient(to right, rgba(159,129,96,1), rgba(159,129,96,1) 60%, rgba(219,186,129,255) 60%, rgba(219,186,129,255));
-	color: rgba(219,186,129,0.7);
+	background-image: linear-gradient(to right, rgba(159,129,96,1), rgba(159,129,96,1) 60%, rgba(242,230,211,255) 60%, rgba(242,230,211,255));
+	color: #F2E6D3;
  	border-radius: 15px 15px 50px 50px;
 }
 
@@ -442,10 +442,10 @@ a:link, a:visited, a:hover, a:active {
 
 /*Top Bar Link*/
 .topbar a {
-	color:rgba(219,186,129,1); 
+	color:#F2E6D3; 
 	text-decoration: none;
 	display: inline-block;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 #example-form .form-section {
